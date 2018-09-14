@@ -1,9 +1,9 @@
 import coremltools
 import os
 
-model_folder = '../20180913-112357-651b_epoch_4.0'
+model_folder = '../20180914-164801-6173_epoch_4.0'
 snapshot     = 'snapshot_iter_15000.caffemodel'
-model_name   = 'MNIST'
+model_name   = '../MNIST'
 
 snapshot = os.path.join(model_folder, snapshot)
 deploy   = os.path.join(model_folder, 'deploy.prototxt')
