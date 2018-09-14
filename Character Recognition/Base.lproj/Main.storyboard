@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ML" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nZt-xV-Seb" customClass="DrawableImageView" customModule="ML" customModuleProvider="target">
+                                <rect key="frame" x="76.5" y="222.5" width="222" height="222"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="222" id="9Xc-hR-rdG"/>
+                                    <constraint firstAttribute="height" constant="222" id="cdY-Qj-aQq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSN-MR-jhl">
+                                <rect key="frame" x="0.0" y="214.5" width="375" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="64"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7Y-nA-A7d">
+                                <rect key="frame" x="0.0" y="452.5" width="375" height="51"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                <state key="normal" title="Clear"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="M7Y-nA-A7d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3gu-ZC-Ogr"/>
+                            <constraint firstItem="nZt-xV-Seb" firstAttribute="top" secondItem="ZSN-MR-jhl" secondAttribute="bottom" constant="8" id="5b6-vg-P6P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZSN-MR-jhl" secondAttribute="trailing" id="GPp-2h-v66"/>
+                            <constraint firstItem="ZSN-MR-jhl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="K97-sP-5kl"/>
+                            <constraint firstItem="nZt-xV-Seb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RnO-ya-GBw"/>
+                            <constraint firstItem="M7Y-nA-A7d" firstAttribute="top" secondItem="nZt-xV-Seb" secondAttribute="bottom" constant="8" id="dLo-ye-ejJ"/>
+                            <constraint firstItem="nZt-xV-Seb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pvG-c8-cpV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M7Y-nA-A7d" secondAttribute="trailing" id="x1v-vr-ccp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="clearButton" destination="M7Y-nA-A7d" id="fm8-3e-feh"/>
+                        <outlet property="imageView" destination="nZt-xV-Seb" id="5NO-nt-8Zk"/>
+                        <outlet property="predictionLabel" destination="ZSN-MR-jhl" id="xGa-fs-wtQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="114.69265367316342"/>
+        </scene>
+    </scenes>
+</document>
